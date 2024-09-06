@@ -12,8 +12,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    public static final String TEXT = " ";
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +27,7 @@ public class MainActivity2 extends AppCompatActivity {
         TextView text = findViewById(R.id.textView2);
         Bundle extras = getIntent().getExtras();
         assert extras != null;
-        text.setText("Переданный параметр: " + extras.getString(TEXT));
+        text.setText("Переданный параметр: " + extras.getString("surname"));
     }
 }
 
